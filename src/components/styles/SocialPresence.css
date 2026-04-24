@@ -1,0 +1,141 @@
+.social-presence-section {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: auto;
+}
+
+.social-presence-container {
+  width: 100%;
+}
+
+.social-presence-section .title {
+  margin-bottom: 16px;
+}
+
+.social-tagline {
+  font-size: 16px;
+  color: #999;
+  margin-bottom: 48px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.social-links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.social-link-card {
+  padding: 32px;
+  border: 1.5px solid #363636;
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(196, 129, 255, 0.04), transparent);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-link-card:hover {
+  border-color: var(--accentColor);
+  background: linear-gradient(135deg, rgba(196, 129, 255, 0.12), rgba(127, 64, 255, 0.04));
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(196, 129, 255, 0.15);
+}
+
+.social-link-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-link-card h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: #fff;
+}
+
+.social-handle {
+  font-size: 14px;
+  color: var(--accentColor);
+  margin: 0;
+  font-weight: 500;
+}
+
+.social-cta {
+  font-size: 12px;
+  color: #999;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.social-link-card:hover .social-cta {
+  color: var(--accentColor);
+  gap: 10px;
+}
+
+.social-link-card:hover .social-cta svg {
+  transform: translateX(2px);
+}
+
+.social-link-card:hover .social-cta {
+  color: var(--accentColor);
+}
+
+@media only screen and (max-width: 1400px) {
+  .social-links-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .social-link-card {
+    padding: 24px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .social-presence-section {
+    padding: 80px 0;
+  }
+
+  .social-presence-section .title {
+    font-size: 20px;
+  }
+
+  .social-tagline {
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+
+  .social-links-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+  }
+
+  .social-link-card {
+    padding: 20px;
+  }
+
+  .social-link-card h4 {
+    font-size: 16px;
+  }
+
+  .social-handle {
+    font-size: 12px;
+  }
+
+  .social-cta {
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,292 @@
+.specialization-section {
+  padding: 120px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  opacity: 1;
+  height: auto;
+  margin: auto;
+}
+
+.specialization-container {
+  width: 100%;
+}
+
+.specialization-section h2 {
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 400;
+  margin-bottom: 60px;
+  background: linear-gradient(0deg, #7f40ff, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.specialist-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.specialist-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background-color: var(--accentColor);
+  color: var(--backgroundColor);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.specialization-tagline {
+  font-size: 18px;
+  color: #b0b0b0;
+  margin-bottom: 48px;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.years-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: rgba(196, 129, 255, 0.1);
+  border: 1px solid rgba(196, 129, 255, 0.3);
+  color: var(--accentColor);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+/* Expertise Grid */
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+  margin-bottom: 80px;
+}
+
+.expertise-card {
+  padding: 32px;
+  border: 1px solid #363636;
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(196, 129, 255, 0.05), rgba(196, 129, 255, 0.01));
+  transition: all 0.3s ease;
+}
+
+.expertise-card:hover {
+  border-color: var(--accentColor);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(196, 129, 255, 0.15);
+}
+
+.expertise-card h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  color: #fff;
+}
+
+.expertise-card p {
+  font-size: 14px;
+  color: #999;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Specialty Grid (Social Media Growth) */
+.specialty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.specialty-item {
+  padding: 24px;
+  background-color: rgba(196, 129, 255, 0.08);
+  border-radius: 8px;
+  border-left: 3px solid var(--accentColor);
+  transition: all 0.3s ease;
+}
+
+.specialty-item:hover {
+  background-color: rgba(196, 129, 255, 0.12);
+  transform: translateX(8px);
+}
+
+.specialty-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  color: #fff;
+}
+
+.specialty-item p {
+  font-size: 14px;
+  color: #b0b0b0;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Crypto Grid */
+.crypto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.crypto-item {
+  padding: 28px;
+  border: 1px solid rgba(196, 129, 255, 0.3);
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(127, 64, 255, 0.08), transparent);
+  transition: all 0.3s ease;
+}
+
+.crypto-item:hover {
+  border-color: var(--accentColor);
+  background: linear-gradient(135deg, rgba(196, 129, 255, 0.15), transparent);
+}
+
+.crypto-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  color: var(--accentColor);
+}
+
+.crypto-item p {
+  font-size: 14px;
+  color: #999;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* AI Grid */
+.ai-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 28px;
+}
+
+.ai-card {
+  padding: 32px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid #363636;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.ai-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accentColor), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.ai-card:hover {
+  border-color: var(--accentColor);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(196, 129, 255, 0.2);
+}
+
+.ai-card:hover::before {
+  opacity: 1;
+}
+
+.ai-card h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  color: #fff;
+}
+
+.ai-card p {
+  font-size: 14px;
+  color: #999;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Highlight Section */
+.specialization-highlight {
+  background: linear-gradient(135deg, rgba(196, 129, 255, 0.08), rgba(127, 64, 255, 0.04));
+  border: 1px solid rgba(196, 129, 255, 0.2);
+  border-radius: 12px;
+  padding: 80px 60px;
+  margin: 120px 0;
+}
+
+@media only screen and (max-width: 1400px) {
+  .specialization-section h2 {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+
+  .expertise-grid,
+  .specialty-grid,
+  .crypto-grid,
+  .ai-grid {
+    gap: 24px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .specialization-section {
+    padding: 80px 0;
+  }
+
+  .specialization-section h2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .specialist-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .expertise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .specialty-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .crypto-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .specialization-highlight {
+    padding: 60px 30px;
+    margin: 80px 0;
+  }
+
+  .expertise-card,
+  .specialty-item,
+  .crypto-item,
+  .ai-card {
+    padding: 24px;
+  }
+}
